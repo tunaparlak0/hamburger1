@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --main-color:#cf8782;
+    --black-color:#040504;
+    --red-color:#eb0505;
+    --white-color:#fff;
+    --gray-color:#fbf3df;
+    --border: 0.2rem solid rgba(255,255,255,0.5);
+}
+
+/*--------------------------------------------------------------------------------GENEL BÖLÜM-----------------------------------------------------------------------------------*/
+
+*{
+    font-family: "Poppins" , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all 0.5sn ease-in-out;
+}
+
+html{
+    font-size: 50%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------------------------BODY SECTION-----------------------------------------------------------------------------------*/
+
+body{
+    background-color: var(--main-color);
+}
+
+section{
+    padding: 4.2rem 7%;
+}
+
+/*--------------------------------------------------------------------------------HEADER BÖLÜMÜ-----------------------------------------------------------------------------------*/
+
+.header .logo img{
+    height: 125px;
+}
+
+.header{
+    background-color:rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5%;
+    margin: 2rem 7%;
+    border-radius: 40rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a{
+    color: var(--black-color);
+    margin: 0 2.4rem ;
+    font-size: 4.5rem;
+    border-bottom: 0.1rem solid transparent;
+    text-shadow: var(--black-color);
+
+}
+
+.header .navbar .active,
+.header .navbar a:hover{
+    border-color:var(--red-color);
+    padding-bottom:0.8rem;
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 3.9rem;
+    margin-left: 2.4rem;
+    background-color: transparent;
+}
+/*------------------------------------------------------------------------------MENÜ BÖLÜMÜ 2.SAYFA--------------------------------------------------------------------------------*/
+.menu h1{
+    color: var(--white-color);
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: #fbf3df;
+    border-bottom: 3px solid var(--white-color);
+    text-transform: uppercase;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(35rem, 1fr));
+    gap: 2rem;
+}
+
+.menu .box-container .box{
+    padding: 5rem;
+    margin-top: 3rem;
+    background-color: var(--gray-color);
+    border-radius: 3.8rem;
+    min-height: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position:relative;
+}
+
+.menu .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.menu .box-container .box h3{
+    font-size: 4rem;
+    padding: 1.2rem 0;
+}
+.menu .box-container .box p{
+    font-size: 2rem;
+}
+.menu .box-container .box .box-bottom .price {
+    position: absolute;
+    bottom: 7.5rem;
+    right: 8rem;
+    color: var(--black-color);
+    font-size : 3rem;
+    font-weight: 600;
+    padding:1rem;
+  }
+
+.btn:hover{
+    opacity: 0.75;
+}
+.btn{
+    margin-top: 1.3rem;
+    display: inline-block;
+    padding: 2.6rem 4.2rem;
+    border-radius: 36rem;
+    color:var(--white-color);
+    background-color:var(--red-color);
+    font-size: 3.2rem;
+}
+#cart {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(248, 249, 250, 0.7);
+    border: 1px solid #ced4da;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    min-height: 400px;
+}
+
+#cart h2 {
+    font-size: 24px;
+    color: #343a40;
+    margin-top: 0;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: auto; /* Yükseklik boşluk bırakır */
+    margin-bottom: 10px; /* Alttan bir boşluk bırakır */
+}
+
+#checkout-form-container {
+    display: flex;
+    justify-content: space-around; /* Elemanları kutu içinde sağa ve sola yay */
+    align-items: flex-start; /* Elemanları kutunun en üstüne hizala */
+    margin-top: 20px; /* Yukarıdan bir boşluk bırakır */
+}
+
+#checkout-form {
+    width: calc(50% - 20px); /* Yarıdan fazla, 20 piksel boşluk bırakır */
+}
+
+#checkout-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#checkout-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+}
+
+#checkout-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+#checkout-form button:hover {
+    background-color: #0056b3;
+}

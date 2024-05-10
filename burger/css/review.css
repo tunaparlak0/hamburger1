@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --main-color:#cf8782;
+    --black-color:#040504;
+    --red-color:#eb0505;
+    --white-color:#fff;
+    --gray-color:#fbf3df;
+    --border: 0.2rem solid rgba(255,255,255,0.5);
+}
+
+
+
+/*--------------------------------------------------------------------------------GENEL BÖLÜM-----------------------------------------------------------------------------------*/
+
+*{
+    font-family: "Poppins" , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all 0.5sn ease-in-out;
+}
+
+html{
+    font-size: 50%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+/*--------------------------------------------------------------------------------BODY SECTION-----------------------------------------------------------------------------------*/
+
+body{
+    background-color: var(--main-color);
+}
+
+section{
+    padding: 4.2rem 7%;
+}
+
+/*--------------------------------------------------------------------------------HEADER BÖLÜMÜ-----------------------------------------------------------------------------------*/
+
+.header .logo img{
+    height: 125px;
+}
+
+.header{
+    background-color:rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5%;
+    margin: 2rem 7%;
+    border-radius: 40rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a{
+    color: var(--black-color);
+    margin: 0 2.4rem ;
+    font-size: 4.5rem;
+    border-bottom: 0.1rem solid transparent;
+    text-shadow: var(--black-color);
+
+}
+
+.header .navbar .active,
+.header .navbar a:hover{
+    border-color:var(--red-color);
+    padding-bottom:0.8rem;
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 3.9rem;
+    margin-left: 2.4rem;
+    background-color: transparent;
+}
+/*-----------------------------------------------------------------------------REVİEW BÖLÜMÜ 3.SAYFA--------------------------------------------------------------------------------*/
+
+.review h1{
+    color: var(--white-color);
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: #fbf3df;
+    border-bottom: 3px solid var(--white-color);
+    text-transform: uppercase;
+}
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(35rem, 1fr));
+    gap:2rem;
+}
+
+.review .box-container .box{
+    margin-top: 4rem;
+    border: var(--white-color);
+    text-align: center;
+    padding: 2.8rem 2.2rem;
+    background-color:var(--gray-color);
+    border-radius:3.8rem ; 
+}
+
+.review .box-container .box p{
+    font-size: 1.7rem;
+    font-weight: 350;
+    line-height: 1.8;
+    padding: 1.4rem 0;
+    font-family: "Poppins" , sans-serif;
+    min-height: 20rem;
+    overflow: auto;
+    text-transform: none;
+}
+
+.review .box-container .box i{
+    font-size: 2.8rem;
+    align-items: center;
+    background-color: transparent;
+}
+
+.review .box-container .box h3{
+    font-size: 2.8rem;
+    align-items: center;
+}
+
+.review .box-container .box .stars i{
+    font-size: 3rem;
+    color: goldenrod;
+}
