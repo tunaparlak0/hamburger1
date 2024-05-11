@@ -146,7 +146,7 @@ section{
 }
 
 .menu .box-container .box p{
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-transform: none;
 }
 
@@ -232,6 +232,7 @@ section{
     width: 110%;
     padding: 8px;
     margin-bottom: 10px;
+    
   }
   
   #checkout-form button {
@@ -240,12 +241,25 @@ section{
     position: absolute;
     bottom: -270px;
     right: -20px;
-    background-color: #4CAF50;
+    background-color:var(--red-color);
     color: white;
     border: none;
     cursor: pointer;
   }
   
   #checkout-form button:hover {
-    background-color: #45a049;
+    opacity: 0.75;
+    transform: scale(1.1);
   }
+
+  .footer{
+    background-color:var(--black-color);
+    text-align: center;
+}
+
+.footer .credit{
+    font-size: 2.8rem;
+    color: var(--white-color);
+    font-weight: 400;
+    padding: 1rem 0; 
+}

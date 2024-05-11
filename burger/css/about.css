@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
-    --main-color:#cf8782;
+    --main-color:#282626;
     --black-color:#040504;
     --red-color:#eb0505;
     --white-color:#fff;
@@ -73,61 +73,143 @@ section{
     padding-bottom:0.8rem;
 }
 /*------------------------------------------------------- Body Part---------------------------------------------------------*/
-.info{
-    min-height: 100vh;
-    background-image: url(/burger/img/newwwwwww.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-top: -20.1rem;
-    display: flex;
-    align-items: center;
-}
-.info h1{
+
+
+.about h1 {
     color: var(--white-color);
     font-size: 4rem;
     font-weight: 800;
     text-shadow: #fbf3df;
     border-bottom: 3px solid var(--white-color);
     text-transform: uppercase;
-}
-
-.info .box-container{
+  }
+  
+  .about .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(35rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     gap: 2rem;
-}
-
-.info .box-container .box{
-    padding: 5rem;
-    margin-top: 3rem;
+    opacity: 0.85;
+  }
+  
+  .about .box-container .box {
+    margin-top: 4rem;
+    border: var(--white-color);
+    text-align: center;
+    padding: 4rem 2.2rem;
     background-color: var(--gray-color);
     border-radius: 3.8rem;
-    min-height: 70rem;
+    min-height: 80rem;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+  }
+  
+  .about .box-container .box p {
+    font-size: 1.7rem;
+    font-weight: 350;
+    line-height: 1.8;
+    padding: 1.4rem 0;
+    font-family: "Poppins", sans-serif;
+    min-height: 20rem;
+    overflow: auto;
+    text-transform: none;
+  }
+  
+  .about .box-container .box h3 {
+    font-size: 3.2rem;
+    align-items: center;
+  }
+  
+  .about .box-container .box .box-head img {
+    object-fit: cover;
+    width: 100%; 
+    height: auto; 
+    border-radius: 3.8rem;
+    transition: transform 0.4s ease;
 }
 
-.info .box-container .box img{
-    width: 80%;
-    object-fit: right;
+  .about .box-container .box .box-content {
+    display: flex;
+    width: 100%;
+  }
+  
+  .about .box-container .box .image-container {
+    flex:1;
+    padding: 2rem;
+  }
+  
+  .about .box-container .box .image-container img {
+    width: 100%;
+    border-radius: 3.8rem;
+    min-height: 25rem;
+  }
+  
+  .about .box-container .box .text-container {
+    flex:1;
+    padding: 2rem;
+  }
+  
+  .about .box-container .box .text-container h3 {
+    font-size: 3.2rem;
+    font-family: 1000;
+    color: #D42020;
+  }
+  
+  .about .box-container .box .text-container p {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .about .box-container .box .text-container h4 {
+    font-size: 3.2rem;
+    font-weight: 750;
+  }
 
+  .about .box-container .box .box-head {
+    position: relative; 
 }
 
-.info .box-container .box h3{
-    font-size: 4rem;
-    padding: 1.2rem 0;
-}
-.info .box-container .box p{
-    font-size: 2rem;
-}
-.info .box-container .box h4{
-    position:relative;
-    bottom: -50px; 
-    left:350px;
-    color: var(--black-color);
-    font-size: 2.0rem;
-    font-weight: 600;
-}
+/*-----------------------------------------------------------------------------FOOTER BÖLÜMÜ 6.SAYFA--------------------------------------------------------------------------------*/
 
+    .footer{
+        background-color:var(--black-color);
+        text-align: center;
+    }
+
+    .footer .share a{
+        width: 10rem;
+        height: 7rem;
+        line-height: 7rem;
+        color: var(--white-color);
+        font-size: 50px;
+        margin: 0.4rem;
+    }
+
+    .footer .share{
+        padding: 2rem 0;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+    .footer .share a,
+    .footer .share .logo{ 
+        width: 10rem;
+        height: 7rem;
+        line-height: 7rem;
+        color: var(--white-color);
+        font-size: 50px;
+        margin: 0 1.7rem; 
+    }
+    
+    .footer .share .logo{ 
+        width: 25rem; 
+        height: auto; 
+        margin: 0 70rem; 
+    }
+    
+    .footer .credit{
+        font-size: 2.8rem;
+        color: var(--white-color);
+        font-weight: 400;
+        padding: 1rem 0; 
+    }
