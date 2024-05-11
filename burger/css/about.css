@@ -41,7 +41,6 @@ section{
 }
 
 /*--------------------------------------------------------------------------------HEADER BÖLÜMÜ-----------------------------------------------------------------------------------*/
-
 .header .logo img{
     height: 125px;
 }
@@ -52,7 +51,7 @@ section{
     align-items: center;
     justify-content: space-around;
     padding: 0 5%;
-    margin: 2rem 7%;
+    margin: 2rem 10%;
     border-radius: 40rem;
     position: sticky;
     top: 0;
@@ -62,7 +61,7 @@ section{
 .header .navbar a{
     color: var(--black-color);
     margin: 0 2.4rem ;
-    font-size: 4.5rem;
+    font-size: 3.2rem;
     border-bottom: 0.1rem solid transparent;
     text-shadow: var(--black-color);
 

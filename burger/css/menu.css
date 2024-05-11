@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
-    --main-color:#cf8782;
+    --main-color:#000000;
     --black-color:#040504;
-    --red-color:#eb0505;
+    --red-color:#D42020;
     --white-color:#fff;
     --gray-color:#fbf3df;
     --border: 0.2rem solid rgba(255,255,255,0.5);
@@ -52,7 +52,7 @@ section{
     align-items: center;
     justify-content: space-around;
     padding: 0 5%;
-    margin: 2rem 7%;
+    margin: 2rem 10%;
     border-radius: 40rem;
     position: sticky;
     top: 0;
@@ -62,7 +62,7 @@ section{
 .header .navbar a{
     color: var(--black-color);
     margin: 0 2.4rem ;
-    font-size: 4.5rem;
+    font-size: 3.2rem;
     border-bottom: 0.1rem solid transparent;
     text-shadow: var(--black-color);
 
@@ -74,13 +74,15 @@ section{
     padding-bottom:0.8rem;
 }
 
-.header .buttons button{
-    cursor: pointer;
-    font-size: 3.9rem;
-    margin-left: 2.4rem;
-    background-color: transparent;
-}
+
 /*------------------------------------------------------------------------------MENÜ BÖLÜMÜ 2.SAYFA--------------------------------------------------------------------------------*/
+.menu {
+    background-image: url('/burger/img/3d-render-spotlights-grunge-brick-wall.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .menu h1{
     color: var(--white-color);
     font-size: 4rem;
@@ -93,47 +95,61 @@ section{
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(35rem, 1fr));
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .menu .box-container .box{
-    padding: 5rem;
+    padding: 4rem;
     margin-top: 3rem;
     background-color: var(--gray-color);
     border-radius: 3.8rem;
-    min-height: 70rem;
+    min-height: 60rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items:flex-start;
     justify-content: space-between;
-    position:relative;
+    opacity: 0.95;
+    
 }
 
-.menu .box-container .box img{
+
+.menu .box-container .box .box-head img{
     width: 100%;
     object-fit: cover;
+    transition: transform 0.4s ease;
+    border-radius: 3.8rem;
+}
 
+.menu .box-container .box .box-head:hover img{
+     transform: scale(1.05); 
 }
 
 .menu .box-container .box h3{
     font-size: 4rem;
     padding: 1.2rem 0;
 }
+
 .menu .box-container .box p{
     font-size: 2rem;
+    text-transform: none;
 }
-.menu .box-container .box .box-bottom .price {
-    position: absolute;
-    bottom: 7.5rem;
-    right: 8rem;
+
+.menu .box-container .box .box-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem; 
+}
+
+.menu .box-container .box .box-bottom .price p {
+    font-size: 5.6rem;
     color: var(--black-color);
-    font-size : 3rem;
-    font-weight: 600;
-    padding:1rem;
-  }
+    margin-left:20rem;
+}
 
 .btn:hover{
     opacity: 0.75;
+    transform: scale(1.1);
 }
 .btn{
     margin-top: 1.3rem;
@@ -142,74 +158,66 @@ section{
     border-radius: 36rem;
     color:var(--white-color);
     background-color:var(--red-color);
-    font-size: 3.2rem;
+    font-size: 2.8rem;
+    transition: transform 0.4s ease;
 }
+
+/*-----------------------------------------------------------------------------ORDER BÖLÜMÜ 3.SAYFA--------------------------------------------------------------------------------*/
+
 #cart {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(248, 249, 250, 0.7);
-    border: 1px solid #ced4da;
+    position: relative;
+    bottom: 0;   
+    width: 80%;
+    height:20%;
+    background-color: #fff;
     padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    min-height: 400px;
-}
-
-#cart h2 {
-    font-size: 24px;
-    color: #343a40;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #cart h2 {
     margin-top: 0;
-}
-
-#cart-items {
-    list-style-type: none;
+    font-size: 24px;
+  }
+  
+  #cart-items {
+    list-style: none;
     padding: 0;
-    margin-bottom: 20px;
-}
-
-#total {
-    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  #cart-items li {
+    margin-bottom: 5px;
+  }
+  
+  #total {
+    margin-top: 10px;
     font-weight: bold;
-    margin-top: auto; /* Yükseklik boşluk bırakır */
-    margin-bottom: 10px; /* Alttan bir boşluk bırakır */
-}
-
-#checkout-form-container {
-    display: flex;
-    justify-content: space-around; /* Elemanları kutu içinde sağa ve sola yay */
-    align-items: flex-start; /* Elemanları kutunun en üstüne hizala */
-    margin-top: 20px; /* Yukarıdan bir boşluk bırakır */
-}
-
-#checkout-form {
-    width: calc(50% - 20px); /* Yarıdan fazla, 20 piksel boşluk bırakır */
-}
-
-#checkout-form label {
+  }
+  
+  #checkout-form-container {
+    margin-top: 20px;
+  }
+  
+  #checkout-form label {
     display: block;
     margin-bottom: 5px;
-}
-
-#checkout-form textarea {
+  }
+  
+  #checkout-form textarea,
+  #checkout-form input[type="text"] {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ced4da;
-    box-sizing: border-box;
-}
-
-#checkout-form button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+  }
+  
+  #checkout-form button {
     padding: 10px 20px;
-    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%;
-}
-
-#checkout-form button:hover {
-    background-color: #0056b3;
-}
+  }
+  
+  #checkout-form button:hover {
+    background-color: #45a049;
+  }

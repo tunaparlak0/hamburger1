@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
-    --main-color:#cf8782;
+    --main-color:#E93A3A;
     --black-color:#040504;
-    --red-color:#eb0505;
+    --red-color:#D42020;
     --white-color:#fff;
     --gray-color:#fbf3df;
     --border: 0.2rem solid rgba(255,255,255,0.5);
@@ -46,13 +47,17 @@ section{
     height: 125px;
 }
 
+.header .logo img{
+    height: 125px;
+}
+
 .header{
     background-color:rgba(255,255,255,0.8);
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 0 5%;
-    margin: 2rem 7%;
+    margin: 2rem 10%;
     border-radius: 40rem;
     position: sticky;
     top: 0;
@@ -62,7 +67,7 @@ section{
 .header .navbar a{
     color: var(--black-color);
     margin: 0 2.4rem ;
-    font-size: 4.5rem;
+    font-size: 3.2rem;
     border-bottom: 0.1rem solid transparent;
     text-shadow: var(--black-color);
 
@@ -78,74 +83,40 @@ section{
 
 /*--------------------------------------------------------------------------------HOME BÖLÜMÜ-----------------------------------------------------------------------------------*/
 
-.home {
-    min-height: 100vh;
-    background-image: url(/burger/img/newwwwwww.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-top: -20.1rem;
-    display: flex;
-    align-items: center;
- }
- 
- .home .content{
-     max-width: 100rem;
- }
- 
- .home .content h3{
-     font-size: 11.2rem;
-     color: var(--red-color);
-     text-shadow:var(--red-color);
- }
- 
- .home .content p{
-     font-size: 3.2rem;
-     color: var(--white-color);
-     font-weight: 350;
-     line-height: 1.8;
-     padding: 1.4rem 0;
-     text-shadow: var(--white-color);
- }
- 
- .btn{
-     margin-top: 1.3rem;
-     display: inline-block;
-     padding: 2.6rem 4.2rem;
-     border-radius: 36rem;
-     color:var(--white-color);
-     background-color:var(--red-color);
-     font-size: 3.2rem;
- }
- /*--------------------------------------------------------------------------------Bilgi Bölümü-----------------------------------------------------------------------------------*/
- .info h1{
+.home{
+   min-height: 100vh;
+   background: url(/burger/img/top-view-burger-fries-with-sauces-copy-space.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin-top: -20.1rem;
+   display: flex;
+   align-items: center;
+}
+
+.home .content{
+    max-width: 72rem;
+}
+
+.home .content h3{
+    font-size: 11.2rem;
+    color: var(--red-color);
+}
+
+.home .content p{
+    font-size: 3.2rem;
     color: var(--white-color);
-    font-size: 4rem;
-    font-weight: 800;
-    text-shadow: #fbf3df;
-    border-bottom: 3px solid var(--white-color);
-    text-transform: uppercase;
+    font-weight: 350;
+    line-height: 1.8;
+    padding: 1.4rem 0;
 }
 
-.info .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(35rem, 1fr));
-    gap: 2rem;
-}
-
-.info .box-container .box{
-    padding: 5rem;
-    margin-top: 3rem;
-    background-color: var(--gray-color);
-    border-radius: 3.8rem;
-    min-height: 70rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-
-
-.info .box-container .box p{
-    font-size: 2rem;
+.btn{
+    margin-top: 1.3rem;
+    display: inline-block;
+    padding: 2.6rem 4.2rem;
+    border-radius: 36rem;
+    color:var(--white-color);
+    background-color:var(--red-color);
+    font-size: 2.8rem;
+    transition: transform 0.4s ease;
 }
