@@ -62,7 +62,7 @@ section{
 .header .navbar a{
     color: var(--black-color);
     margin: 0 2.4rem ;
-    font-size: 3.2rem;
+    font-size: 4.2rem;
     border-bottom: 0.1rem solid transparent;
     text-shadow: var(--black-color);
 

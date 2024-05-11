@@ -39,7 +39,7 @@ function updateCart() {
   });
 
   // Toplam tutarı güncelle
-  totalElement.textContent = `Toplam: $${total.toFixed(2)}`;
+  totalElement.textContent = `Total: $${total.toFixed(2)}`;
 }
 
 // Sayfa yüklendiğinde çağrılacak fonksiyon
@@ -56,3 +56,9 @@ window.onload = function() {
     });
   });
 };
+document.getElementById("scrollToBottomBtn").addEventListener("click", function() {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: "smooth"
+  });
+});

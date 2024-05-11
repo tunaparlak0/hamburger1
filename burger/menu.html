@@ -24,6 +24,7 @@
     </header>
     <section class="menu">
         <h1>OUR MENU</h1>
+        <button id="scrollToBottomBtn">My Orders</button>
         <div class="box-container">
           <div class="row">
             <div class="box" data-name="BEEF" data-price="10.99">
@@ -149,16 +150,18 @@
   <p id="total">Total: $0</p>
   <div id="checkout-form-container">
     <form id="checkout-form">
-      <label for="address">Address:</label><br>
-      <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
-      <label for="note">Note:</label><br>
-      <textarea id="note" name="note" rows="4" cols="50"></textarea><br>
-      <label for="phone">Phone:</label>
-      <input type="text" id="phone" name="phone" pattern = [0-9]{10} required>
-      <label for="payment">Payment Method:</label>
-        <input type="radio" id="cash" name="payment" value="cash" checked>Cash
-        <input type="radio" id="credit" name="payment" value="credit">Credit Card
-      <button type="submit">Checkout</button>
+      <label for="address" style="font-size:2.5rem;font-weight: 1000;">Address:</label><br>
+      <textarea id="address" name="address" rows="4" cols="50"style="border-radius: 3.5rem; background-color:#fff;" required></textarea><br>
+      <label for="note" style="font-size:2.5rem;font-weight: 1000;">Note:</label><br>
+      <textarea id="note" name="note" rows="4" cols="50"style="border-radius: 3.5rem; background-color:#fff;"></textarea><br>
+      <label for="phone" style="font-size:2.5rem;font-weight: 1000;">Phone:</label>
+      <input type="text" id="phone" name="phone" pattern = [0-9]{10} style="border-radius: 3.5rem; background-color:#fff;" required>
+      <div style="font-size: 2rem">
+      <label for="payment" style="font-size:2.5rem;font-weight: 1000;" >Payment Method:</label>
+        <input type="radio" id="cash" name="payment" value="cash" style="font-size:3.5rem;font-weight: 1000;"checked>Cash
+        <input type="radio" id="credit" name="payment" value="credit" style="font-size:2.5rem;font-weight: 1000;">Credit Card
+      </div>
+        <button type="submit">Order</button>
     </form>
   </div>
 </div>
