@@ -9,7 +9,6 @@
     --gray-color:#fbf3df;
     --border: 0.2rem solid rgba(255,255,255,0.5);
 }
-
 /*--------------------------------------------------------------------------------GENEL BÖLÜM-----------------------------------------------------------------------------------*/
 
 *{
@@ -23,34 +22,28 @@
     text-transform: capitalize;
     transition:all 0.5sn ease-in-out;
 }
-
 html{
     font-size: 50%;
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
-
 /*--------------------------------------------------------------------------------BODY SECTION-----------------------------------------------------------------------------------*/
 
 body{
     background-color: var(--main-color);
 }
-
 section{
     padding: 4.2rem 7%;
 }
-
 /*--------------------------------------------------------------------------------HEADER BÖLÜMÜ-----------------------------------------------------------------------------------*/
 
 .header .logo img{
     height: 125px;
 }
-
 .header .logo img{
     height: 125px;
 }
-
 .header{
     background-color:rgba(255,255,255,0.8);
     display: flex;
@@ -63,45 +56,32 @@ section{
     top: 0;
     z-index: 1000;
 }
-
 .header .navbar a{
     color: var(--black-color);
     margin: 0 2.4rem ;
     font-size: 4.2rem;
     border-bottom: 0.1rem solid transparent;
     text-shadow: var(--black-color);
-
 }
-
 .header .navbar .active,
 .header .navbar a:hover{
     border-color:var(--red-color);
     padding-bottom:0.8rem;
 }
-
-
-
 /*--------------------------------------------------------------------------------HOME BÖLÜMÜ-----------------------------------------------------------------------------------*/
-
-.home{
-   min-height: 100vh;
-   background: url(/burger/img/top-view-burger-fries-with-sauces-copy-space.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
-   margin-top: -20.1rem;
-   display: flex;
-   align-items: center;
+body {
+  background-image: url('/burger/img/top-view-burger-fries-with-sauces-copy-space.jpg');
+  background-size: cover; 
+  background-position: center; 
 }
 
 .home .content{
     max-width: 72rem;
 }
-
 .home .content h3{
     font-size: 11.2rem;
     color: var(--red-color);
 }
-
 .home .content p{
     font-size: 3.2rem;
     color: var(--white-color);
@@ -109,7 +89,6 @@ section{
     line-height: 1.8;
     padding: 1.4rem 0;
 }
-
 .btn{
     margin-top: 1.3rem;
     display: inline-block;
@@ -120,8 +99,7 @@ section{
     font-size: 2.8rem;
     transition: transform 0.4s ease;
 }
-
-
+/*--------------------------------------------------------------------------------ÖDÜL BÖLÜMÜ-----------------------------------------------------------------------------------*/
   
   .winner .box-container {
     display: grid;
@@ -130,7 +108,6 @@ section{
     opacity: 0.85;
     
   }
-  
   .winner .box-container .box {
     margin-top: 4rem;
     border: var(--white-color);
@@ -140,10 +117,8 @@ section{
     border-radius: 3.8rem;
     height:50rem;
     display: flex;
-    width:100%;
-
+    width:90%;
   }
-  
   .winner .box-container .box p {
     font-size: 1.7rem;
     font-weight: 350;
@@ -154,49 +129,38 @@ section{
     overflow: auto;
     text-transform: none;
   }
-  
   .winner .box-container .box h3 {
     font-size: 3.2rem;
     align-items: center;
     color:#D42020;
   }
-  
-  
   .winner .box-container .box .box-content {
     display: flex;
     width: 100%;
   }
-  
   .winner .box-container .box .image-container {
     flex:1;
     padding: 2rem;
   }
-  
   .winner .box-container .box .image-container img {
     width: 80%;
     height:100%;
     border-radius: 3.8rem;
     min-height: 25rem;
   }
-  
   .winner .box-container .box .text-container {
     flex:1;
     padding: 2rem;
   }
-  
-  
-  
   .winner .box-container .box .text-container p {
     font-size: 2.4rem;
     margin-bottom: 1rem;
     font-weight: 500;
   }
-  
-  
-
   .winner .box-container .box .box-head {
     position: relative; 
   }
+
   .footer{
     background-color:var(--black-color);
     text-align: center;

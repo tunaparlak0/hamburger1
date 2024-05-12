@@ -8,9 +8,7 @@
     --gray-color:#fbf3df;
     --border: 0.2rem solid rgba(255,255,255,0.5);
 }
-
 /*--------------------------------------------------------------------------------GENEL BÖLÜM-----------------------------------------------------------------------------------*/
-
 *{
     font-family: "Poppins" , sans-serif;
     margin: 0;
@@ -22,30 +20,23 @@
     text-transform: capitalize;
     transition:all 0.5sn ease-in-out;
 }
-
 html{
     font-size: 50%;
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
-
 /*--------------------------------------------------------------------------------BODY SECTION-----------------------------------------------------------------------------------*/
-
 body{
     background-color: var(--main-color);
 }
-
 section{
     padding: 4.2rem 7%;
 }
-
 /*--------------------------------------------------------------------------------HEADER BÖLÜMÜ-----------------------------------------------------------------------------------*/
-
 .header .logo img{
     height: 125px;
 }
-
 .header{
     background-color:rgba(255,255,255,0.8);
     display: flex;
@@ -58,7 +49,6 @@ section{
     top: 0;
     z-index: 1000;
 }
-
 .header .navbar a{
     color: var(--black-color);
     margin: 0 2.4rem ;
@@ -67,14 +57,11 @@ section{
     text-shadow: var(--black-color);
 
 }
-
 .header .navbar .active,
 .header .navbar a:hover{
     border-color:var(--red-color);
     padding-bottom:0.8rem;
 }
-
-
 /*------------------------------------------------------------------------------MENÜ BÖLÜMÜ 2.SAYFA--------------------------------------------------------------------------------*/
 .menu {
     background-image: url('/burger/img/3d-render-spotlights-grunge-brick-wall.jpg');
@@ -82,7 +69,6 @@ section{
     background-position: center;
     background-repeat: no-repeat;
 }
-
 .menu h1{
     color: var(--white-color);
     font-size: 4rem;
@@ -91,6 +77,7 @@ section{
     border-bottom: 3px solid var(--white-color);
     text-transform: uppercase;
 }
+/* Scroll to bottom button */
 #scrollToBottomBtn {
     background-color: rgb(181, 43, 43);
     border: none;
@@ -107,13 +94,11 @@ section{
     right: 120px;
 }
 
-
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(35rem, 1fr));
     gap: 2.5rem;
 }
-
 .menu .box-container .box{
     padding: 4rem;
     margin-top: 3rem;
@@ -124,39 +109,31 @@ section{
     flex-direction: column;
     align-items:flex-start;
     justify-content: space-between;
-    opacity: 0.95;
-    
+    opacity: 0.95;   
 }
-
-
 .menu .box-container .box .box-head img{
     width: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
     border-radius: 3.8rem;
 }
-
 .menu .box-container .box .box-head:hover img{
      transform: scale(1.05); 
 }
-
 .menu .box-container .box h3{
     font-size: 4rem;
     padding: 1.2rem 0;
 }
-
 .menu .box-container .box p{
     font-size: 1.7rem;
     text-transform: none;
 }
-
 .menu .box-container .box .box-bottom{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem; 
 }
-
 .menu .box-container .box .box-bottom .price p {
     font-size: 5.6rem;
     color: var(--black-color);
@@ -177,9 +154,7 @@ section{
     font-size: 2.8rem;
     transition: transform 0.4s ease;
 }
-
-/*-----------------------------------------------------------------------------ORDER BÖLÜMÜ 3.SAYFA--------------------------------------------------------------------------------*/
-
+/*-----------------------------------------------------------------------------ORDER BÖLÜMÜ --------------------------------------------------------------------------------*/
 #cart {
     position: relative;
     min-height: 500px;
@@ -192,41 +167,34 @@ section{
     opacity:0.95;
     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
   }
-  
   #cart h2 {
     margin-top: 0;
     font-size: 24px;
   }
-  
   #cart-items {
     list-style: none;
     font-size: large;
     padding: 0;
     margin: 10px 0;
   }
-  
   #cart-items li {
     margin-bottom: 5px;
   }
-  
   #total {
     margin-top: 10px;
     font-size: x-large;
     font-weight: bold;
   }
-  
   #checkout-form-container {
     position: absolute;
     height: 200px;
     top: 10px; 
     right: 50px; 
-  }
-  
+  } 
   #checkout-form label {
     display: block;
     margin-bottom: 5px;
   }
-  
   #checkout-form textarea,
   #checkout-form input[type="text"] {
     width: 110%;
@@ -234,7 +202,6 @@ section{
     margin-bottom: 10px;
     
   }
-  
   #checkout-form button {
     padding: 20px 35px;
     border-radius: 3.5rem;
@@ -246,17 +213,15 @@ section{
     border: none;
     cursor: pointer;
   }
-  
   #checkout-form button:hover {
     opacity: 0.75;
     transform: scale(1.1);
   }
-
+/*--------------------------------------------------------------------------------FOOTER BÖLÜMÜ-----------------------------------------------------------------------------------*/
   .footer{
     background-color:var(--black-color);
     text-align: center;
 }
-
 .footer .credit{
     font-size: 2.8rem;
     color: var(--white-color);
