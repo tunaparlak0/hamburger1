@@ -33,8 +33,11 @@ html{
 /*--------------------------------------------------------------------------------BODY SECTION-----------------------------------------------------------------------------------*/
 
 body{
-    background-color: var(--main-color);
+   
+    background-size: cover;
+    background-position: center;
 }
+
 
 section{
     padding: 4.2rem 7%;
