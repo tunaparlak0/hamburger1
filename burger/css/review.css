@@ -31,8 +31,10 @@ html{
 
 /*--------------------------------------------------------------------------------BODY SECTION-----------------------------------------------------------------------------------*/
 
-body{
-    background-color: var(--main-color);
+body {
+    background-image: url('/burger/img/3d-render-spotlights-grunge-brick-wall.jpg');
+    background-size: cover;
+    background-position: center;
 }
 section{
     padding: 4.2rem 7%;

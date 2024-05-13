@@ -63,11 +63,10 @@ section{
     padding-bottom:0.8rem;
 }
 /*------------------------------------------------------------------------------MENÜ BÖLÜMÜ 2.SAYFA--------------------------------------------------------------------------------*/
-.menu {
+body {
     background-image: url('/burger/img/3d-render-spotlights-grunge-brick-wall.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 .menu h1{
     color: var(--white-color);
@@ -92,6 +91,10 @@ section{
     position: absolute;
     top: 165px;
     right: 120px;
+}
+#scrollToBottomBtn:hover {
+    opacity: 0.75;
+    transform: scale(1.1);
 }
 
 .menu .box-container{

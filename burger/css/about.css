@@ -73,7 +73,11 @@ section{
     padding-bottom:0.8rem;
 }
 /*------------------------------------------------------- Body Part---------------------------------------------------------*/
-
+body {
+  background-image: url('/burger/img/3d-render-spotlights-grunge-brick-wall.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
 .about h1 {
     color: var(--white-color);
@@ -88,7 +92,7 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     gap: 2rem;
-    opacity: 0.85;
+   
   }
   
   .about .box-container .box {
