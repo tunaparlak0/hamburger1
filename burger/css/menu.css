@@ -220,6 +220,15 @@ body {
     opacity: 0.75;
     transform: scale(1.1);
   }
+  .delete-btn {
+    background-color:var(--red-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3.5rem;
+    margin-left: 10px;
+}
 /*--------------------------------------------------------------------------------FOOTER BÖLÜMÜ-----------------------------------------------------------------------------------*/
   .footer{
     background-color:var(--black-color);
